@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/form_news.css">
+    <script src="js/script.js" defer></script>
+    <title>N1 - Notícias</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header id="header">
+            <div class="none"></div>
+            <div class="logo">
+                <p>News</p>
+            </div>
+            <!-- navbar -->
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><button id="btn-new-news">Postar notícia</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+            <div class="style-fade"></div>
+            <!-- New news -->
+            <div class="form-news hide">
+                <div class="form">
+                    <!-- head form news -->
+                    <div id="head-form-news">
+                        <h1 id="h1-none"></h1>
+                        <h1 class="news-title ">Postar notícia</h1>
+                        <button type="submit" id="btn-close" name="close" title="Fechar">
+                          <img
+                           src="/img/form/img_close.png" alt="fechar" >
+                        </button>
+                    </div>
+                    <!-- data-writer -->
+                    <div class="data-writer">
+
+                        <!-- name-writer -->
+                        <label for="name-writer">
+                            Nome <span class="mandatory">*</span>
+                        </label>
+                        <input type="text" name="name-writer" id="name-writer" placeholder="Digite seu nome "
+                            required="">
+
+                        <!-- last-name-writer -->
+                        <label for="last-name-writer">
+                            Sobrenome <span class="mandatory">*</span>
+                        </label>
+                        <input type="text" id="last-name-writer" name="last-name-writer"
+                            placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <!-- data-news -->
+                    <div class="data-news">
+
+                        <!-- type-news -->
+                        <label id="label-type-news" for="type-news">
+                            Selecione o tipo da notícia
+                            <select name="type-news" id="type-news">
+                                <option value="news">Notícia</option>
+                                <option value="headline">Manchete</option>
+                            </select>
+                        </label>
+
+                        <!-- news title -->
+                        <label id="label-news-title" for="news-title">
+                            <p>Título <span class="mandatory">*</span></p>
+                            <input type="text" name="news-title" id="news-title"
+                                placeholder="Digite o títilo da notícia">
+                        </label>
+
+                        <!-- news subtitle -->
+                        <label id="label-news-subtitle" for="news-subtitle">
+                            <p>Subtítulo <span class="mandatory">*</span></p>
+                            <input type="text" name="news-subtitle" id="news-subtitle"
+                                placeholder="Digite o títilo da notícia">
+                        </label>
+
+                        <!-- news-body -->
+                        <label id="label-news-body" for="news-body">
+                            <p>Notícia <span class="mandatory">*</span></p>
+                            <textarea name="news-body" id="news-body" cols="30" rows="10"
+                                placeholder="Escreva sua notícia ..."></textarea>
+                        </label>
+
+                        <!-- news-image -->
+                        <label id="label-news-image" for="news-image">
+                            Inserir imagem da noticia
+                            <input type="file" id="news-image" name="news-image">
+                        </label>
+
+                    </div>
+
+                    <button type="submit" id="btn-post-news">Postar</button>
+                </div>
+            </div>
+
+
+            <!-- News -->
+            <div class="content">
+                <div class="headline">
+                    <img id="headline-img" src="img/main/images/img_news.jpg " alt="One Piece">
+                    <div class="headline-content">
+                        <h1 id="headline-title">Lorem Isum</h1>
+                        <p id="headline-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <p id="headline-sources">Por Lorem ispum</p>
+                    </div>
+                </div>
+
+                <h1 class="title" id="title-more-news">Mais notícias</h1>
+
+                <div class="news_parent">
+                    <div class="news">
+                        <img id="news-image" src="img/main/images/img_news.jpg" alt="One Piece">
+                        <div class="news-content">
+                            <h1 class="news-title">Lorem ipsum</h1>
+                            <p class="news-body">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and
+                                scrambled it to make a
+                                type specimen book.
+                            </p>
+
+                            <p class="news-sources">Por Lorem Ipsum</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img id="news-image" src="img/main/images/img_news.jpg" alt="One Piece">
+                        <div class="news-content">
+                            <h1 class="news-title">Lorem isum</h1>
+                            <p class="news-body">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and
+                                scrambled it to make a
+                                type specimen book.
+                            </p>
+
+                            <p class="news-sources">Por Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+</body>
+
+</html>
